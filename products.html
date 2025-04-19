@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Products | HapeMart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .section-title {
+      color: #37517e;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .product-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 15px;
+      height: 100%;
+      transition: 0.3s ease;
+      background-color: #fff;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    .badge-barang {
+      font-size: 0.8rem;
+      margin-right: 5px;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #000;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: grey;
+      font-size: 0.9rem;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #37517e;">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">HapeMart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+        </ul>
+        <div class="d-flex gap-3">
+          <a href="login.html" class="text-white nav-link">Login</a>
+          <a href="register.html" class="text-white nav-link">Register</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <h1 class="section-title">Katalog Produk Kami</h1>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+
+      <!-- Produk 1 -->
+  <div class="col">
+    <div class="product-card">
+      <img src="image/phone1.jpeg" class="img-fluid rounded" alt="Produk">
+      <div class="product-title">POCO F7 Pro</div>
+      <div class="text-muted small">Snapdragon 8 Gen 3, Baterai 6000mAh</div>
+      <span class="badge bg-success">Baru</span>
+      <span class="badge bg-warning text-dark">Diskon 6%</span>
+      <div class="mt-2">
+        <span class="price">Rp 6.999.000</span>
+        <span class="old-price">Rp 7.499.000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produk 2 -->
+  <div class="col">
+    <div class="product-card">
+      <img src="image/phone2.jpeg" class="img-fluid rounded" alt="Produk">
+      <div class="product-title">Xiaomi 15 Ultra</div>
+      <div class="text-muted small">Snapdragon 8 Gen 5, Kamera Leica</div>
+      <span class="badge bg-success">Baru</span>
+      <span class="badge bg-warning text-dark">Diskon 2%</span>
+      <div class="mt-2">
+        <span class="price">Rp 14.499.000</span>
+        <span class="old-price">Rp 16.999.000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produk 3 -->
+  <div class="col">
+    <div class="product-card">
+      <img src="image/phone3.jpeg" class="img-fluid rounded" alt="Produk">
+      <div class="product-title">Samsung Galaxy S24</div>
+      <div class="text-muted small">Exynos 2400, Dynamic AMOLED</div>
+      <span class="badge bg-success">Baru</span>
+      <div class="mt-2">
+        <span class="price">Rp 12.999.000</span>
+        <span class="old-price">Rp 13.499.000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produk 4 -->
+  <div class="col">
+    <div class="product-card">
+      <img src="image/phone4.jpeg" class="img-fluid rounded" alt="Produk">
+      <div class="product-title">Infinix Zero 5G</div>
+      <div class="text-muted small">Dimensity 920, 8GB RAM</div>
+      <span class="badge bg-success">Baru</span>
+      <span class="badge bg-warning text-dark">Diskon 10%</span>
+      <div class="mt-2">
+        <span class="price">Rp 2.999.000</span>
+        <span class="old-price">Rp 3.299.000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produk 5 -->
+  <div class="col">
+    <div class="product-card">
+      <img src="image/phone5.jpeg" class="img-fluid rounded" alt="Produk">
+      <div class="product-title">iPhone 15 Pro Max</div>
+      <div class="text-muted small">A17 Pro, 256GB</div>
+      <span class="badge bg-success">Baru</span>
+      <div class="mt-2">
+        <span class="price">Rp 20.999.000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produk 6 -->
+  <div class="col">
+    <div class="product-card">
+      <img src="image/phone6.jpeg" class="img-fluid rounded" alt="Produk">
+      <div class="product-title">Realme GT 5</div>
+      <div class="text-muted small">Snapdragon 8 Gen 2, 240W Charging</div>
+      <span class="badge bg-success">Baru</span>
+      <span class="badge bg-warning text-dark">Diskon 4%</span>
+      <div class="mt-2">
+        <span class="price">Rp 5.799.000</span>
+        <span class="old-price">Rp 5.999.000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produk 7 -->
+  <div class="col">
+    <div class="product-card">
+      <img src="image/phone7.jpeg" class="img-fluid rounded" alt="Produk">
+      <div class="product-title">OPPO Reno11 F</div>
+      <div class="text-muted small">MediaTek Dimensity 7050</div>
+      <span class="badge bg-success">Baru</span>
+      <div class="mt-2">
+        <span class="price">Rp 3.499.000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produk 8 -->
+  <div class="col">
+    <div class="product-card">
+      <img src="image/phone8.jpeg" class="img-fluid rounded" alt="Produk">
+      <div class="product-title">vivo V30 Pro</div>
+      <div class="text-muted small">Zeiss Lens, 50MP Triple Camera</div>
+      <span class="badge bg-success">Baru</span>
+      <div class="mt-2">
+        <span class="price">Rp 6.999.000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produk 9 -->
+  <div class="col">
+    <div class="product-card">
+      <img src="image/tablet1.jpeg" class="img-fluid rounded" alt="Produk">
+      <div class="product-title">iPad Air 5</div>
+      <div class="text-muted small">Chip M1, Layar 10.9"</div>
+      <span class="badge bg-success">Baru</span>
+      <div class="mt-2">
+        <span class="price">Rp 11.999.000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produk 10 -->
+  <div class="col">
+    <div class="product-card">
+      <img src="image/tablet2.jpeg" class="img-fluid rounded" alt="Produk">
+      <div class="product-title">Samsung Galaxy Tab S9</div>
+      <div class="text-muted small">Snapdragon 8 Gen 2 for Galaxy</div>
+      <span class="badge bg-success">Baru</span>
+      <div class="mt-2">
+        <span class="price">Rp 13.999.000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produk 11 -->
+  <div class="col">
+    <div class="product-card">
+      <img src="image/tablet3.jpeg" class="img-fluid rounded" alt="Produk">
+      <div class="product-title">Huawei MatePad 11</div>
+      <div class="text-muted small">Snapdragon 865, HarmonyOS</div>
+      <span class="badge bg-success">Baru</span>
+      <span class="badge bg-warning text-dark">Diskon 5%</span>
+      <div class="mt-2">
+        <span class="price">Rp 5.699.000</span>
+        <span class="old-price">Rp 5.999.000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produk 12 -->
+  <div class="col">
+    <div class="product-card">
+      <img src="image/tablet4.jpeg" class="img-fluid rounded" alt="Produk">
+      <div class="product-title">Lenovo Tab M10 Plus</div>
+      <div class="text-muted small">RAM 4GB, Full HD Display</div>
+      <span class="badge bg-success">Baru</span>
+      <div class="mt-2">
+        <span class="price">Rp 2.599.000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produk 13 -->
+  <div class="col">
+    <div class="product-card">
+      <img src="image/tablet5.jpeg" class="img-fluid rounded" alt="Produk">
+      <div class="product-title">Xiaomi Pad 6</div>
+      <div class="text-muted small">Snapdragon 870, Layar 144Hz</div>
+      <span class="badge bg-success">Baru</span>
+      <div class="mt-2">
+        <span class="price">Rp 5.499.000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produk 14 -->
+  <div class="col">
+    <div class="product-card">
+      <img src="image/tablet6.jpeg" class="img-fluid rounded" alt="Produk">
+      <div class="product-title">Advan Tab VX Lite</div>
+      <div class="text-muted small">4G LTE, Layar 10.4"</div>
+      <span class="badge bg-success">Baru</span>
+      <span class="badge bg-warning text-dark">Diskon 8%</span>
+      <div class="mt-2">
+        <span class="price">Rp 1.899.000</span>
+        <span class="old-price">Rp 2.099.000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produk 15 -->
+  <div class="col">
+    <div class="product-card">
+      <img src="image/phone9.jpeg" class="img-fluid rounded" alt="Produk">
+      <div class="product-title">ASUS ROG Phone 7</div>
+      <div class="text-muted small">Snapdragon 8 Gen 2, Gaming Mode</div>
+      <span class="badge bg-success">Baru</span>
+      <div class="mt-2">
+        <span class="price">Rp 10.999.000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produk 16 -->
+  <div class="col">
+    <div class="product-card">
+      <img src="image/phone10.jpeg" class="img-fluid rounded" alt="Produk">
+      <div class="product-title">Nokia G60 5G</div>
+      <div class="text-muted small">Snapdragon 695, Android 13</div>
+      <span class="badge bg-success">Baru</span>
+      <div class="mt-2">
+        <span class="price">Rp 3.199.000</span>
+      </div>
+    </div>
+  </div>
+      
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
