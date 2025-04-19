@@ -1,0 +1,42 @@
+/* ======= style.css ======= */
+.carousel-item img {
+    object-fit: cover;
+    height: 460px;
+    width: 100%;
+  }
+  
+  .carousel-caption {
+    bottom: 20%;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .section-title {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .product-card {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s;
+    height: 100%;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .price {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 0.9rem;
+  }
+  
